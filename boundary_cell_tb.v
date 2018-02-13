@@ -1,5 +1,5 @@
 `timescale 1ns/10ps
-module test2;
+module boundary_cell_tb;
 localparam T=10;//100MHz
 reg clk,rst;
 reg [31:0] x;
@@ -7,7 +7,7 @@ wire [31:0]c;
 wire s;
 
 
-boundary_cell instance_name (
+boundary_cell b_c (
     .clk(clk), 
     .rst(rst), 
     .x(x), 
