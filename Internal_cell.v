@@ -23,7 +23,7 @@ DFF u_c_reg
 .q(c_out) 
 );
 
-DFF u_s_reg
+DFF #(.width(1)) u_s_reg
 (
 .clk(clk),.rst(rst),
 .d(s_in),

@@ -25,7 +25,7 @@ DFF u_p_reg
 //.q(x_buf) 
 //);
 
-DFF u_s_reg
+DFF #( .width(1) ) u_s_reg
 (
 .clk(clk),.rst(rst),
 .d(s_next),

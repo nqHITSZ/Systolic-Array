@@ -1,8 +1,9 @@
 module DFF
+#(parameter width = 32)
 (
 input clk,rst,
-input signed[31:0] d,
-output reg signed [31:0] q 
+input signed[width-1:0] d,
+output reg signed [width-1:0] q 
 );
     
 always@ (posedge clk, posedge rst)
